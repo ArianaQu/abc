@@ -1,1 +1,5 @@
-33333
+CREATE TABLE IF NOT EXISTS HS_ESS_EVENT_T2 (rowkey  VARCHAR NOT NULL,device_enum BIGINT NOT NULL,index_num BIGINT NOT NULL,value_num BIGINT NOT NULL,event_code BIGINT NOT NULL,event_mes VARCHAR,event_time_str  VARCHAR CONSTRAINT my_pk PRIMARY KEY (rowkey,device_enum,index_num, value_num, event_code));
+  <property>
+    <name>phoenix.schema.isNamespaceMappingEnabled</name>
+    <value>true</value>
+  </property>
